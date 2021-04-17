@@ -4,6 +4,11 @@ body{
 a{
   text-decoration: none;
 }
+img {
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+}
 .whole{
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -62,17 +67,18 @@ a{
 .et-slide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
+  background:azure;
   position: relative;
-  background: #eee;
   text-align: center;
   padding: 0 2em;
 }
-
-
-
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-buttons{
+  justify-content: flex-start;
+}
 
 #stars{
   width: 1px;
