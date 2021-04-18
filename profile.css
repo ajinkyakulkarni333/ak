@@ -1,13 +1,27 @@
-body{
+body {
+  font-family: "Century Gothic", "Lato", sans-serif;
   margin: 0;
 }
-a{
+
+a {
   text-decoration: none;
 }
-img {
-  border-radius: 10px;
+#img_prof{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+article{
+  float: left;
+}
+
+#img_about{
+  border-radius: 8px;
   width: 200px;
   height: 300px;
+  object-fit: cover;
 }
 .whole{
   height: 100%;
@@ -15,6 +29,35 @@ img {
   overflow: hidden;
   font-family: "Century Gothic", "Lato", sans-serif;
 }
+
+.et-hero-tabs,
+.et-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background:transparent;
+  text-align: center;
+  padding: 0 2em;
+}
+.et-hero-tabs h1,
+.et-slide h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+.et-hero-tabs h1,h3{
+  color: azure;
+}
+.et-hero-tabs h3,
+.et-slide h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+
 .et-hero-tabs-container {
   display: flex;
   flex-direction: row;
@@ -23,21 +66,14 @@ img {
   width: 100%;
   height: 70px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: azure;
+  background:azure;
   z-index: 10;
 }
 .et-hero-tabs-container--top {
   position: fixed;
   top: 0;
 }
-.et-hero-tab-slider {
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  background: #66b1f1;
-  transition: left 0.3s ease;
-}
+
 .et-hero-tab {
   display: flex;
   justify-content: center;
@@ -46,13 +82,12 @@ img {
   color: #000;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 .et-hero-tab:hover {
   color: white;
-  background: hsla(199, 61%, 29%, 0.856);
+  background: rgba(13, 24, 34, 0.8);
   transition: all 0.5s ease;
-  text-decoration: none;
 }
 
 .et-hero-tab-slider {
@@ -60,23 +95,27 @@ img {
   bottom: 0;
   width: 0;
   height: 6px;
-  background: #66B1F1;
+  background:  rgba(13, 24, 34, 0.8);
   transition: left 0.3s ease;
 }
 
-.et-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  background:azure;
-  position: relative;
-  text-align: center;
-  padding: 0 2em;
+.et-main{
+  background: azure;
 }
-.social-buttons{
-  justify-content: flex-start;
+
+@media (min-width: 800px) {
+  .et-hero-tabs h1,
+.et-slide h1 {
+    font-size: 3rem;
+  }
+  .et-hero-tabs h3,
+.et-slide h3 {
+    font-size: 1rem;
+  }
+
+  .et-hero-tab {
+    font-size: 1rem;
+  }
 }
 
 #stars{
@@ -164,6 +203,9 @@ img {
 
 }
 
+#tab-contact ul{
+  display: inline-block;
+}
 @keyframes animStar {
   from {
     transform: translateY(0px);
@@ -173,17 +215,124 @@ img {
   }
 }
 
-@media (min-width: 800px) {
-  .et-hero-tabs h1,
-.et-slide h1 {
-    font-size: 3rem;
-  }
-  .et-hero-tabs h3,
-.et-slide h3 {
-    font-size: 1rem;
-  }
 
-  .et-hero-tab {
-    font-size: 1rem;
-  }
+/* Contact */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
 }
