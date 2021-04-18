@@ -57,6 +57,15 @@ article{
   letter-spacing: 0.3rem;
   opacity: 0.6;
 }
+.et-slide .skills{
+  height: 400px;
+  display:flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: scroll;
+  align-self: flex-start;
+}
 
 .et-hero-tabs-container {
   display: flex;
@@ -210,6 +219,7 @@ article{
 #tab-contact h3{
   color: black;
 }
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
@@ -218,7 +228,6 @@ article{
     transform: translateY(-2000px);
   }
 }
-
 
 /* Contact */
 
@@ -264,4 +273,3 @@ article{
   background: hsl(0, 47%, 39%);
   color: white;
 }
-
