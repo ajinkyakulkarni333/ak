@@ -6,6 +6,8 @@
 <title>Ajinkya Kulkarni — Full Stack Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+<link rel="shortcut icon" href="assets/favicon.png">
 <link rel="stylesheet" href="profile.css">
 </head>
 <body>
@@ -273,9 +275,9 @@
         </p>
       </div>
       <div class="contact-links reveal" style="transition-delay:0.2s">
-        <a class="contact-link" href="/cdn-cgi/l/email-protection#a1c0cbc8cfcad8c0cad4cdcac0d3cfc8929292e1c6ccc0c8cd8fc2cecc">
+        <a class="contact-link" id="email-link" href="#" onclick="return false;">
           <span class="contact-link-label">Email</span>
-          <span class="contact-link-value"><span class="__cf_email__" data-cfemail="a7c6cdcec9ccdec6ccd2cbccc6d5c9ce949494e7c0cac6cecb89c4c8ca">[email&#160;protected]</span></span>
+          <span class="contact-link-value">ajinkyakulkarni333@gmail.com</span>
           <span class="contact-link-arrow">→</span>
         </a>
         <a class="contact-link" href="https://github.com/ajinkyakulkarni333" target="_blank">
@@ -295,4 +297,27 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">AJINKYA K
+  <div class="footer-logo" id="footer-logo">AJINKYA KULKARNI</div>
+  <div class="footer-copy">© 2026 · Full Stack Developer · Pune, India</div>
+</footer>
+
+<!-- VISITOR COUNTER PANEL (hidden, owner only — triple-click footer logo) -->
+<div id="visit-counter" style="
+  display:none; position:fixed; bottom:32px; right:32px; z-index:9999;
+  background:#0D0D0D; color:#F5F0E8; padding:24px 32px;
+  border:1px solid rgba(196,68,28,0.5); font-family:'DM Mono',monospace;
+  box-shadow:0 8px 40px rgba(0,0,0,0.6); min-width:220px;">
+  <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#C4441C;margin-bottom:12px;">Visitor Stats</div>
+  <div style="font-size:56px;font-family:'Bebas Neue',sans-serif;line-height:1;" id="visit-count-num">0</div>
+  <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:4px;">Total visits</div>
+  <div style="margin-top:18px;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);">Last visit</div>
+  <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;" id="visit-last-date">—</div>
+  <div style="margin-top:20px;text-align:right;">
+    <span onclick="document.getElementById('visit-counter').style.display='none'"
+      style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#C4441C;cursor:pointer;">Close ✕</span>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
